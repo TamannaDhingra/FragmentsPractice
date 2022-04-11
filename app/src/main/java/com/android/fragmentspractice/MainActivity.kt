@@ -19,8 +19,9 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        initalizeList()
         replaceFragment(FragmentOne(),true)
-        replaceFragment2(FragmentTwo(),true)
+       // replaceFragment2(FragmentTwo(),true)
 
         bottomNavigationCode()
 

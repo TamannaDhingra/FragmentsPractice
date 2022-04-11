@@ -29,8 +29,6 @@ class FragmentOne : Fragment() {
         binding.clickBtn.setOnClickListener {
            (activity as MainActivity).counterCallBack.countItems(count++)
 
-
-
         }
 
         return binding.root
