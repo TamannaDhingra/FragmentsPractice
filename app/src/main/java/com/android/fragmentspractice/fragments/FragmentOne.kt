@@ -24,7 +24,9 @@ class FragmentOne : Fragment() {
         // Inflate the layout for this fragment
         binding= FragmentOneBinding.inflate(inflater,container,false)
 
-      //  BaseActivity().replaceFragment2(FragmentTwo(),true)
+//       BaseActivity().replaceFragment2(FragmentTwo(),true)
+
+
         var count=1
         binding.clickBtn.setOnClickListener {
            (activity as MainActivity).counterCallBack.countItems(count++)
@@ -32,9 +34,6 @@ class FragmentOne : Fragment() {
         }
 
         return binding.root
-
-
-
 
     }
 

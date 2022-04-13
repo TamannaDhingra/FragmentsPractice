@@ -23,7 +23,7 @@ class FragmentTwo : Fragment(), CounterVariable {
         binding= FragmentTwoBinding.inflate(inflater,container,false)
 
 
-        //BaseActivity().replaceFragment(FragmentThree(),true)
+       // BaseActivity().replaceFragment(FragmentThree(),true)
         (activity as BaseActivity).counterCallBack = this
 
 

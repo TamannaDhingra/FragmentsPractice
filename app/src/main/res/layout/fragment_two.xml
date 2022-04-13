@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="30dp"
+            android:textSize="15dp"
             android:gravity="center"
             android:textColor="@color/teal_200"
             android:text="Fragment Two" />
@@ -24,8 +24,8 @@
             android:layout_height="50dp"
             android:id="@+id/show_count"
             android:layout_gravity="center"
-            android:text="2"
-            android:layout_marginTop="70dp"
+            android:text="0"
+            android:layout_marginTop="30dp"
             android:textColor="@color/design_default_color_error"
             android:textSize="27dp"
             android:gravity="center" />

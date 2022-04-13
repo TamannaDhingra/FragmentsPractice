@@ -12,6 +12,13 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:id="@+id/drawrer_layout"
+        android:layout_height="match_parent">
+
         <TextView
             android:id="@+id/mainact"
             android:layout_width="wrap_content"
@@ -29,7 +36,8 @@
 
             android:id="@+id/mainContainer"
             android:layout_width="match_parent"
-            android:layout_height="550dp"
+            android:layout_height="500dp"
+            android:background="@color/white"
             android:layout_marginTop="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -45,10 +53,24 @@
             android:layout_height="100dp"
             app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/mainContainer">
+            app:layout_constraintTop_toBottomOf="@+id/mainContainer"
+            app:layout_constraintVertical_bias="1.0">
 
         </FrameLayout>
+
+        <!--this the navigation view which draws
+            and shows the navigation drawer-->
+        <!--include the menu created in the menu folder-->
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/navigation_drawrer" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
